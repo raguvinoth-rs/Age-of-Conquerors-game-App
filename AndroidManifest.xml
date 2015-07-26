@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team1.ageofconquerors"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    !-- Market filtering --> 
+    <uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:name="com.team1.ageofconquerors.SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+      
+        
+        <activity
+            android:name="com.team1.android.wifidirect.WiFiDirectActivity"
+            android:label="WifiDirect" android:launchMode="singleTask">
+         </activity>
+         
+          <activity 
+            android:name="com.team1.ageofconquerors.LoginActivity"
+            android:label="Login">
+        </activity>
+         
+        <activity 
+            android:name="com.team1.ageofconquerors.RegisterActivity"
+            android:label="Register">
+        </activity>
+        
+          <activity 
+            android:name="com.team1.ageofconquerors.DashboardActivity"
+            android:label="Dashboard">
+        </activity>
+        
+        <activity
+            android:name="com.team1.ageofconquerors.GameActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape" >
+        </activity>    
+        <!-- Used for transferring files  after a successful connection -->
+        <service android:enabled="true" android:name="com.team1.android.wifidirect.FileTransferService" />
+         <!-- Service that runs always -->
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

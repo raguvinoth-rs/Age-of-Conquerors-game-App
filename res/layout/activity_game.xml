@@ -1,0 +1,610 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maincontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game" >
+
+     <ScrollView
+        android:id="@+id/leftPanelScrollView"
+        android:layout_width="45dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/side_panel_wood"
+		>
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<FrameLayout 
+		    android:id="@+id/layout_villager1"
+	        android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:layout_marginBottom="10dp"
+	        android:visibility="visible" >
+        	<ImageButton
+            android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/icon_villager_sb"
+			></ImageButton>
+        	<ImageView 
+	            	android:id="@+id/count_villager_icon"
+	            	android:background="@drawable/count_icon"
+	            	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"/>
+            <TextView 
+				    android:id="@+id/villager_icon_text"
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dip"
+				    android:layout_gravity="bottom"
+				    android:textColor="#f7e906"
+				    android:textStyle="bold"
+				    android:text=""/>
+          
+            </FrameLayout>
+	       <FrameLayout 
+		    android:id="@+id/layout_swords1"
+	        android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:layout_marginBottom="10dp"
+	        android:visibility="visible" >
+        	<ImageButton
+            android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/icon_swords_sb"
+			></ImageButton>
+        	<ImageView 
+	            	android:id="@+id/count_swords_icon"
+	            	android:background="@drawable/count_icon"
+	            	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"/>
+            <TextView 
+				    android:id="@+id/swords_icon_text"
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dip"
+				    android:layout_gravity="bottom"
+				    android:textColor="#f7e906"
+				    android:textStyle="bold"
+				    android:text=""/>
+        
+            </FrameLayout>
+            <FrameLayout 
+		    android:id="@+id/layout_knight1"
+	        android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:layout_marginBottom="10dp"
+	        android:visibility="visible" >
+        	<ImageButton
+            android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/icon_knight_sb"
+			></ImageButton>
+        	<ImageView 
+	            	android:id="@+id/count_knight_icon"
+	            	android:background="@drawable/count_icon"
+	            	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"/>
+            <TextView 
+				    android:id="@+id/knight_icon_text"
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dip"
+				    android:layout_gravity="bottom"
+				    android:textColor="#f7e906"
+				    android:textStyle="bold"
+				    android:text=""/>
+          
+            </FrameLayout>
+            
+            <FrameLayout 
+		    android:id="@+id/layout_trebuche1"
+	        android:layout_width="match_parent"
+			android:layout_height="85dp"
+			android:layout_marginBottom="10dp"
+	        android:visibility="visible" >
+        	<ImageButton
+            android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/icon_trebuche_sb"
+			></ImageButton>
+        	<ImageView 
+	            	android:id="@+id/count_trebuche_icon"
+	            	android:background="@drawable/count_icon"
+	            	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"/>
+            <TextView 
+				    android:id="@+id/trebuche_icon_text"
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dip"
+				    android:layout_gravity="bottom"
+				    android:textColor="#f7e906"
+				    android:textStyle="bold"
+				    android:text=""/>
+            
+            </FrameLayout>
+			<!--  <ImageButton
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/villager_button_ui"
+			></ImageButton>
+			<ImageButton
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/villager_button_ui"
+			></ImageButton>
+			<ImageButton
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/villager_button_ui"
+			></ImageButton>
+			<ImageButton
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/villager_button_ui"
+			></ImageButton>
+			<ImageButton
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/villager_button_ui"
+			></ImageButton>
+			<ImageButton
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/villager_button_ui"
+			></ImageButton>-->
+		</LinearLayout>
+            
+        
+      </ScrollView>
+
+    <ScrollView
+        android:id="@+id/rightPanelScrollView"
+        android:layout_width="45dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/side_panel_wood" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/midContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@id/rightPanelScrollView"
+        android:layout_toRightOf="@id/leftPanelScrollView"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_panel"
+            android:orientation="horizontal" >
+            
+              <LinearLayout
+		        android:id="@+id/resources"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dip"
+				android:layout_marginLeft="45dip"
+				>
+			        <TextView 
+			            android:id="@+id/wood"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:drawableLeft="@drawable/icon_wood"
+			            android:drawablePadding="5dip"
+			            android:text="200"
+			            android:textColor="#ffffff"
+			            android:textStyle="bold"/>
+			        <TextView 
+			            android:id="@+id/food"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:drawableLeft="@drawable/icon_food"
+			            android:drawablePadding="5dip"
+			            android:textColor="#ffffff"
+			            android:text="200"
+			            android:textStyle="bold"
+			            android:layout_marginLeft="32dip"/>
+			        <TextView 
+			            android:id="@+id/gold"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:drawableLeft="@drawable/icon_gold"
+			            android:drawablePadding="5dip"
+			            android:textColor="#ffffff"
+			            android:textStyle="bold"
+			            android:text="100"
+			            android:layout_marginLeft="28dip"/>
+			        <TextView 
+			            android:id="@+id/stone"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:drawableLeft="@drawable/icon_stone"
+			            android:drawablePadding="5dip"
+			            android:textColor="#ffffff"
+			            android:text="100"
+			            android:textStyle="bold"
+			            android:layout_marginLeft="28dip"/>
+		      </LinearLayout>
+    		
+			
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"          
+                android:layout_marginRight="5dip"
+                 android:layout_alignBottom="@+id/resources"
+                android:max="100"
+                android:progress="45" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/resources"
+                android:layout_alignLeft="@id/progress"
+                android:layout_alignRight="@id/progress"
+                android:layout_alignTop="@id/progress"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg1068x649_blank" >
+       <!--   <FrameLayout
+            android:id="@+id/layout_villager"
+	        android:layout_width="40dip"
+			android:layout_height="wrap_content"
+	        android:layout_marginLeft="135dip"
+	        android:layout_marginTop="35dip"
+	        android:visibility="visible"
+            
+            >
+			<ImageView 
+	            	android:id="@+id/count_villager_icon"
+	            	android:background="@drawable/villager_on_map"
+	            	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="right"/>
+             <ImageView 
+	            	android:id="@+id/count_villager_icon"
+	            	android:background="@drawable/count_icon"
+	            	android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"/>
+            <TextView 
+				    android:id="@+id/villager_icon_text"
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dip"
+				    android:layout_gravity="bottom"
+				    android:textColor="#f7e906"
+				    android:textStyle="bold"
+				    android:text=""/>
+        </FrameLayout>	-->
+            <FrameLayout
+                android:id="@+id/tc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="185dip"
+                android:layout_marginTop="25dip"
+                android:background="@drawable/tc"
+                android:visibility="invisible" >"
+
+                <ImageView
+                    android:id="@+id/tc_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/count_icon" />
+
+                <TextView
+                    android:id="@+id/tc_icon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dip"
+                    android:text=""
+                    android:textColor="#f7e906"
+                    android:textStyle="bold" />
+            </FrameLayout>
+            
+            <FrameLayout
+                android:id="@+id/castle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="310dip"
+                android:layout_marginTop="85dip"
+                android:background="@drawable/castle"
+                android:visibility="invisible" >"
+
+                <ImageView
+                    android:id="@+id/castle_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/count_icon" />
+
+                <TextView
+                    android:id="@+id/castle_icon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dip"
+                    android:text=""
+                    android:textColor="#f7e906"
+                    android:textStyle="bold" />
+            </FrameLayout>
+            
+            <FrameLayout
+                android:id="@+id/barracks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="95dip"
+                android:layout_marginTop="125dip"
+                android:background="@drawable/barracks"
+                android:visibility="invisible" >"
+
+                <ImageView
+                    android:id="@+id/barracks_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/count_icon" />
+
+                <TextView
+                    android:id="@+id/barracks_icon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dip"
+                    android:text=""
+                    android:textColor="#f7e906"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/workshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="190dp"
+                android:background="@drawable/workshop"
+                android:visibility="invisible" >"
+
+                <ImageView
+                    android:id="@+id/workshop_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/count_icon" />
+
+                <TextView
+                    android:id="@+id/workshop_icon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dip"
+                    android:text=""
+                    android:textColor="#f7e906"
+                    android:textStyle="bold" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/goldmine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="440dp"
+                android:layout_marginTop="195dp"
+                android:background="@drawable/gold"
+                android:visibility="invisible" >"
+			</FrameLayout>
+            <ImageButton
+                android:id="@+id/buttonBuild"
+                android:layout_width="70dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_build" />
+
+    <GridView 
+    android:id="@+id/gridView1"
+    android:background="@drawable/build_popup"
+    android:layout_above="@id/buttonBuild"
+    android:visibility="invisible"
+    android:numColumns="auto_fit"
+    android:gravity="center"
+    android:columnWidth="100dp"
+    android:stretchMode="columnWidth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+</GridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+ <RelativeLayout 
+	    android:id="@+id/unitMenu"
+	    android:layout_width="500dip"
+		android:layout_height="100dip"
+		android:background="@drawable/unit_menu"
+		android:visibility="invisible"
+		android:layout_toLeftOf="@id/rightPanelScrollView"
+		android:layout_alignBottom="@id/rightPanelScrollView"
+		android:animateLayoutChanges="true"
+		>
+			<RelativeLayout 
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dip">
+			
+				<Button
+					android:id="@+id/cross_unitMenu"
+					android:background="@drawable/cross_brown"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"/>
+				
+				
+				<LinearLayout
+				    android:id="@+id/iconAndName"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical"
+				    android:gravity="center"
+				    >
+				    
+				    <TextView 
+				        android:id="@+id/unitName"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+						android:textColor="#331e00"
+						android:textStyle="bold"/>
+				    <ImageView
+				        android:id="@+id/iconUnitMenu"
+				        android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+				    </ImageView>"
+			    </LinearLayout>
+			    
+				<LinearLayout
+				    android:id="@+id/statsLayout"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical"
+				    android:layout_toRightOf="@id/iconAndName"
+				    android:layout_marginLeft="20dip"
+				    android:layout_marginTop="5dip"
+				    >
+				    <TextView
+				        android:id="@+id/attack"
+				        android:drawableLeft="@drawable/icon_attack"
+				        android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:textColor="#331e00"
+				    	android:textStyle="bold"/>
+				    <TextView
+				        android:id="@+id/range"
+				        android:drawableLeft="@drawable/icon_range"
+				        android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:textColor="#331e00"
+				    	android:textStyle="bold"/>
+				</LinearLayout>
+				
+				<LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:background="@drawable/unit_menu_subunit_bg"
+				    android:layout_toLeftOf="@id/cross_unitMenu"
+				    android:layout_marginRight="10dip"
+				    android:orientation="vertical"
+				    >
+				    
+				    <TextView
+				        android:layout_marginTop="5dip"
+				        android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:text="Units and Technologies"
+				    	android:textColor="#331e00"
+				    	android:textStyle="bold"
+				    	android:layout_gravity="center_horizontal"/>
+				    <RelativeLayout 
+				        android:id="@+id/creatableUnitsPane"
+				        android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:layout_marginLeft="13dip"
+				    	android:layout_marginTop="5dip">
+				    	<Button
+				    	    android:id="@+id/createVillager"
+				    	    android:layout_width="40dp"
+				    		android:layout_height="35dp"/>
+				    	
+				    	<Button
+				    	    android:id="@+id/KnightButton"
+				    	    android:layout_width="40dp"
+				    		android:layout_height="35dp"
+				    		android:layout_marginLeft="15dp"
+				    		android:layout_toRightOf="@+id/SwordButton"
+				    		android:visibility="invisible"/>
+				    	
+				    	<Button
+				    	    android:id="@+id/TrebucheButton"
+				    	    android:layout_width="40dp"
+				    		android:layout_height="35dp"
+				    		android:visibility="invisible"/>
+				    	
+				    	<Button
+				    	    android:id="@+id/SwordButton"
+				    	    android:layout_width="40dp"
+				    		android:layout_height="35dp"
+				    		android:visibility="invisible"/>
+
+						<TextView 
+				    	    android:id="@+id/TrebucheText"
+				    	    android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:textColor="#331e00"
+				    		android:layout_below="@id/TrebucheButton"
+				    		android:textSize="4pt"/>
+				    	
+				    	<TextView 
+				    	    android:id="@+id/villagerText"
+				    	    android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:textColor="#331e00"
+				    		android:layout_below="@id/createVillager"
+				    		android:textSize="4pt"/>
+				    	
+				    	<TextView 
+				    	    android:id="@+id/SwordText"
+				    	    android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:textColor="#331e00"
+				    		android:layout_below="@id/SwordButton"
+				    		android:textSize="4pt"/>
+				    	
+				    	<TextView 
+				    	    android:id="@+id/KnightText"
+				    	    android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:textColor="#331e00"
+				    		android:layout_below="@id/KnightButton"
+				    		android:layout_toRightOf="@+id/SwordText"
+				    		android:layout_marginLeft="15dp"
+				    		android:textSize="4pt"
+				    		android:visibility="invisible"/>
+				    	
+				        
+				    </RelativeLayout>
+				    
+				    
+				</LinearLayout>
+				
+			</RelativeLayout>
+	 </RelativeLayout>
+</RelativeLayout>

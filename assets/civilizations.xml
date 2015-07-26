@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AoETree>
+    <spanish>
+        <stage id="darkage">
+            <building id="5" name="Town Center" hp="2904" attack="15" armor="6" pierceArmor="8" range="10" rangeMin="0" garrison="15">
+                <cost food="50" wood="60" stone="20" gold="0"></cost>
+                <unit id="1" name="villager" hp="40" attack="3" armor="0" pierceArmor="0" range="0" rangeMin="0">
+                    <cost food="10" wood="0" stone="0" gold="0"></cost>
+                </unit>
+                <tech id="0" name="Feudal Age" />
+                <tech id="1" name="Loom" />
+            </building>
+            <building id="0" name="barracks" hp="2541" attack="40" armor="3" pierceArmor="10" range="20" rangeMin="0" garrison="10">
+                <cost food="100" wood="175" stone="50" gold="40" />
+                <unit id="1" name="soldier" hp="70" attack="15" armor="1" pierceArmor="1" range="10" rangeMin="0">
+                    <cost food="25" wood="0" stone="10" gold="20" />
+                </unit>
+                <unit id="2" name="knight" hp="70" attack="20" armor="1" pierceArmor="1" range="15" rangeMin="0">
+                    <cost food="30" wood="0" stone="10" gold="20" />
+                </unit>
+            </building>
+            <building id="0" name="workshop" hp="2541" attack="20" armor="3" pierceArmor="10" range="10" rangeMin="0" garrison="10">
+                <cost food="100" wood="175" stone="50" gold="20" />
+                <unit id="1" name="trebuche" hp="70" attack="60" armor="50" pierceArmor="1" range="35" rangeMin="0">
+                    <cost food="0" wood="60" stone="40" gold="0" />
+                </unit>
+            </building>
+            <building id="1" name="Dock"></building>
+            <building id="2" name="Outpost" hp="605" attack="0" armor="0" pierceArmor="0" range="0">
+                <cost wood="25" gold="20" />
+            </building>
+            <building id="3" name="Paliside Wall" hp="250" attack="0" armor="2" pierceArmor="5" range="0">
+                <cost wood="2" />
+            </building>
+            <building id="4" name="House" hp="1089" attack="0" armor="3" pierceArmor="10" range="0" />
+            
+            <building id="6" name="Mining Camp" hp="1210" attack="0" armor="3" pierceArmor="10" range="0">
+                <cost wood="100" />
+            </building>
+            <building id="7" name="Lumber Camp" hp="1210" attack="0" armor="3" pierceArmor="10" range="0">
+                <cost wood="100" />
+            </building>
+            <building id="8" name="Mill" hp="1210" attack="0" armor="3" pierceArmor="10" range="0">
+                <cost wood="100" />
+            </building>
+            <building id="9" name="Castle" hp="6000" attack="20" armor="10" pierceArmor="15" range="10" rangeMin="5" garrison="20">
+                <cost food="200" wood="300" stone="150" gold="180"></cost>
+                <unit id="2" name="Conquistador" hp="50" attack="14" armor="8" pierceArmor="5" range="0" rangeMin="0">
+                    <cost food="100" wood="0" stone="0" gold="50"></cost>
+                </unit>
+                <tech id="0" name="Feudal Age" />
+                <tech id="1" name="Loom" />
+            </building>
+        </stage>
+    </spanish>
+</AoETree>
